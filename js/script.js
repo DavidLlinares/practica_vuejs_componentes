@@ -1,4 +1,5 @@
 // Sample data
+var peliculasList=[];
 var server_data = {
     collection :
     {
@@ -44,7 +45,7 @@ Vue.component('edit-form', {
     template: '#editForm',
     props: ['parametro', 'elemento'],
     methods:{
-        closeForm: function (elem) {peliculasList.splice(peliculasList.indexOf(elem), i);}
+        closeForm: function (elem) {peliculasList.splice(peliculasList.indexOf(elem), 1);}
     }
 })
 
